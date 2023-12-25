@@ -10,8 +10,10 @@ img = Image.new(mode="RGB", size=(200, 200), color='white')
 I1 = ImageDraw.Draw(img)
  
 # Add Text to an image
-I1.text((40, 40), "Random Name", fill=(0, 0, 0))
+I1.text((40, 40), "Pandom Name", fill=(0, 0, 0))
 I1.text((40, 60), "SFDDFGFDGDG", fill=(0, 0, 0))
 I1.text((40, 80), "DFGDHDFHDGH", fill=(0, 0, 0))
+
+#img = img.rotate(90)
 
 img.save('test.png', 'PNG')
