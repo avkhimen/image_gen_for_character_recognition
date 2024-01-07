@@ -13,10 +13,12 @@ for item in result:
 
 def determine_gender(arr):
     for a in arr:
+        a = a[1].split()
         for elem in a:
             try:
-                elem = re.sub(r'[^A-Za-z]', '', elem)
+                elem = re.sub(r"[^a-zA-Z]+", "", elem)
                 elem = elem.lower()
+                #print(elem)
                 if elem == 'male' or elem == 'female':
                     return elem.lower()
             except Exception as e:
