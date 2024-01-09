@@ -15,7 +15,7 @@ result = result[:3]
 for item in result:
     print(item[1].split())
 
-def determine_gender(arr):
+def get_info_from_img(arr):
     gender = None
     DOB = None
     first_name = None
@@ -29,8 +29,7 @@ def determine_gender(arr):
                 # Gender test
                 if elem == 'male' or elem == 'female':
                     gender = elem.lower()
-
             except Exception as e:
                 continue
 
-print(determine_gender(result))
+print(get_info_from_img(result))
